@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<virtualType name="Amasty\Sorting\Model\ResourceModel\Method\PriceAsc" type="MageGuide\OverridePriceSortingAttribute\Model\ResourceModel\Method\Price">
+        <arguments>
+            <argument name="methodCode" xsi:type="string">price_asc</argument>
+            <argument name="methodName" xsi:type="string">Price: low to high</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Amasty\Sorting\Model\ResourceModel\Method\PriceDesc" type="MageGuide\OverridePriceSortingAttribute\Model\ResourceModel\Method\Price">
+        <arguments>
+            <argument name="methodCode" xsi:type="string">price_desc</argument>
+            <argument name="methodName" xsi:type="string">Price: high to low</argument>
+        </arguments>
+    </virtualType>
+</config>
